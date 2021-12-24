@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright MediaCT. All rights reserved.
- * https://www.mediact.nl
+ * Copyright Youwe. All rights reserved.
+ * https://www.youweagency.com
  */
 -->
-<ruleset name="Mediact/Common">
-    <description>MediaCT its extension to PSR2.</description>
+<ruleset name="Global/Common">
+    <description>Global its extension to PSR2.</description>
 
     <!-- Base rules on PSR12 -->
     <rule ref="PSR12">

@@ -1,14 +1,16 @@
 <?php
 
 /**
- * Copyright MediaCT. All rights reserved.
- * https://www.mediact.nl
+ * Copyright Youwe. All rights reserved.
+ * https://www.youweagency.com
  */
 
-namespace Mediact\CodingStandard\MediactPhpUnit\Sniffs\Coverage;
+declare(strict_types=1);
 
-use Mediact\CodingStandard\FunctionTrait;
-use Mediact\CodingStandard\PhpDocCommentTrait;
+namespace Youwe\CodingStandard\GlobalPhpUnit\Sniffs\Coverage;
+
+use Youwe\CodingStandard\FunctionTrait;
+use Youwe\CodingStandard\PhpDocCommentTrait;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 

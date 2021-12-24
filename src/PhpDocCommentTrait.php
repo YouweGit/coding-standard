@@ -1,11 +1,13 @@
 <?php
 
 /**
- * Copyright MediaCT. All rights reserved.
- * https://www.mediact.nl
+ * Copyright Youwe. All rights reserved.
+ * https://www.youweagency.com
  */
 
-namespace Mediact\CodingStandard;
+declare(strict_types=1);
+
+namespace Youwe\CodingStandard;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Util\Tokens;

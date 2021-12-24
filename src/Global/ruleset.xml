@@ -5,8 +5,8 @@
  * https://www.youweagency.com
  */
 -->
-<ruleset name="Mediact">
-    <description>MediaCT coding standards</description>
+<ruleset name="Global">
+    <description>Global coding standards</description>
 
     <rule ref="../GlobalCommon"/>
     <rule ref="../GlobalPhpUnit"/>
