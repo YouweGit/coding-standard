@@ -1,25 +1,31 @@
 {
-    "name": "mediact/coding-standard",
-    "description": "MediaCT PHP Coding Standard",
+    "name": "youwe/coding-standard",
+    "description": "Youwe PHP Coding Standard",
     "type": "phpcs-sniffs",
     "license": "MIT",
     "authors": [
         {
-            "name": "MediaCT",
-            "email": "contact@mediact.nl"
+            "name": "Youwe",
+            "email": "contact@youweagency.com"
         }
     ],
     "require": {
         "php": "^7.0",
-        "squizlabs/php_codesniffer": "~3.5.0",
+        "squizlabs/php_codesniffer": "~3.6.2",
         "phpmd/phpmd": "^2.0"
     },
     "require-dev": {
         "mediact/testing-suite": "@stable"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/testing-suite"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Mediact\\CodingStandard\\": "src"
+            "Youwe\\CodingStandard\\": "src"
         }
     },
     "autoload-dev": {

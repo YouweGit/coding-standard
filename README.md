@@ -1,14 +1,13 @@
 # Introduction
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mediact/coding-standard/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mediact/coding-standard/?branch=master)
-This is the MediaCT coding standard, it contains rule sets for PHPCS and PHPMD.
+This is the Youwe coding standard, it contains rule sets for PHPCS and PHPMD.
 
 # Installation
 
 Use composer to install the coding standard in the home directory.
 
 ```shell
-composer global require mediact/coding-standard
+composer global require youwe/coding-standard
 ```
 
 # Configuring PHPStorm to use the coding standard.
@@ -21,7 +20,7 @@ Go to __Settings > Languages & Frameworks > PHP > Code Sniffer__. Choose
 
 Then go to __Settings > Editor > Inspections__ and search for PHP Code Sniffer
 Validation. Select Custom and the add the path to 
-`~/.config/composer/vendor/mediact/coding-standard/src/MediaCT`
+`~/.config/composer/vendor/youwe/coding-standard/src/Global`
 
 # Using the coding standard in a project
 
@@ -29,7 +28,7 @@ To use the standard in a project the standard needs to be required in composer.
 
 ```shell
 cd <project_directory>
-composer require mediact/coding-standard --dev
+composer require youwe/coding-standard --dev
 ```
 
 This will add the coding standard to the vendor directory of the project.
@@ -40,7 +39,7 @@ project.
 ```xml
 <?xml version="1.0"?>
 <ruleset>
-    <rule ref="./vendor/mediact/coding-standard/src/MediaCT"/>
+    <rule ref="./vendor/youwe/coding-standard/src/Global"/>
 </ruleset>
 ```
 
@@ -54,7 +53,7 @@ cd <project_directory>
 # Configuring PHP CodeSniffer to also show less severe messages
 
 By default PHP CodeSniffer shows only messages with a severity higher than
-__5__. The MediaCT coding standard also has some messages with a lower
+__5__. The Youwe coding standard also has some messages with a lower
 severity. These are messages that encourage a better way of coding but should
 not block a pull request.
 
