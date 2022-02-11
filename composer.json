@@ -20,6 +20,26 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/YouweGit/coding-standard"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/coding-standard-phpstorm"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/composer-dependency-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/composer-file-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/file-mapping"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/YouweGit/testing-suite"
         }
     ],
