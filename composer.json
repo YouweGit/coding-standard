@@ -14,7 +14,7 @@
     "require": {
         "php": "^7.0",
         "phpmd/phpmd": "^2.0",
-        "squizlabs/php_codesniffer": "~3.6.2"
+        "squizlabs/php_codesniffer": "~3.5.4"
     },
     "require-dev": {
         "youwe/testing-suite": "dev-master"
