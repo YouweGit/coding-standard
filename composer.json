@@ -3,6 +3,8 @@
     "description": "Youwe PHP Coding Standard",
     "type": "phpcs-sniffs",
     "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Youwe",
@@ -15,12 +17,16 @@
         "phpmd/phpmd": "^2.0"
     },
     "require-dev": {
-        "mediact/testing-suite": "@stable"
+        "youwe/testing-suite": "dev-master"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/YouweGit/coding-standard"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/testing-suite"
         },
         {
             "type": "vcs",
@@ -37,10 +43,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/YouweGit/file-mapping"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/testing-suite"
         }
     ],
     "autoload": {
