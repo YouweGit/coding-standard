@@ -16,5 +16,5 @@
         MediaCT defined PHPMD rules - deprecated.
         Use Global defined PHPMD rules instead.
     </description>
-    <rule ref="../rulesets/phpmd.xml" />
+    <rule ref="../Global/phpmd.xml" />
 </ruleset>

@@ -4,10 +4,10 @@
     "type": "phpcs-sniffs",
     "license": "MIT",
     "prefer-stable": true,
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
-            "name": "Youwe",
+            "name": "Youwe B.V.",
             "email": "info@youweagency.com"
         }
     ],
@@ -16,35 +16,6 @@
         "phpmd/phpmd": "^2.0",
         "squizlabs/php_codesniffer": "~3.5.4"
     },
-    "require-dev": {
-        "youwe/testing-suite": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/coding-standard"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/testing-suite"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/coding-standard-phpstorm"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/composer-dependency-installer"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/composer-file-installer"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/YouweGit/file-mapping"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Youwe\\CodingStandard\\": "src"
