@@ -65,7 +65,14 @@
     <!-- Files -->
     <rule ref="Generic.Files.ByteOrderMark"/>
     <rule ref="Generic.Files.LineEndings"/>
-    <rule ref="Generic.Files.LineLength"/>
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>*.xml</exclude-pattern>
+        <properties>
+            <property name="lineLimit" value="200" />
+            <property name="absoluteLineLimit" value="800" />
+            <property name="ignoreComments" value="true" />
+        </properties>
+    </rule>
 
     <!-- Formatting -->
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
@@ -96,4 +103,11 @@
 
     <!-- Whitespace -->
     <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+            <property name="spacingAfterLast" value="0" />
+        </properties>
+    </rule>
 </ruleset>
