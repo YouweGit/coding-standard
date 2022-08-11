@@ -43,5 +43,16 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "phpcs-set-paths": [
+          "vendor/bin/phpcs --config-set installed_paths src/,../../magento/magento-coding-standard/,../../phpcompatibility/php-compatibility/"
+        ],
+        "post-install-cmd": [
+          "@phpcs-set-paths"
+        ],
+        "post-update-cmd": [
+          "@phpcs-set-paths"
+        ]
     }
 }
