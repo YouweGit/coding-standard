@@ -11,7 +11,6 @@
     ],
     "require": {
         "php": "^7.0 || ^8.0",
-        "magento/magento-coding-standard": "*",
         "phpmd/phpmd": "^2.0",
         "squizlabs/php_codesniffer": "^3.5.4"
     },
@@ -43,16 +42,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "@phpcs-set-paths"
-        ],
-        "post-update-cmd": [
-            "@phpcs-set-paths"
-        ],
-        "phpcs-set-paths": [
-            "vendor/bin/phpcs --config-set installed_paths src/,../../magento/magento-coding-standard/,../../phpcompatibility/php-compatibility/"
-        ]
     }
 }
