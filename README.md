@@ -15,12 +15,12 @@ composer global require youwe/coding-standard
 First configure PHPStorm to use the right phpcs command.
 
 Go to __Settings > Languages & Frameworks > PHP > Code Sniffer__. Choose
-"Local" for the path and fill in the full path to 
+"Local" for the path and fill in the full path to
 `~/.config/composer/vendor/bin/phpcs`
 
 Then go to __Settings > Editor > Inspections__ and search for PHP Code Sniffer
-Validation. Select Custom and the add the path to 
-`~/.config/composer/vendor/youwe/coding-standard/src/Global`
+Validation. Select Custom and the add the path to
+`~/.config/composer/vendor/youwe/coding-standard/src/Youwe`
 
 # Using the coding standard in a project
 
@@ -39,7 +39,7 @@ project.
 ```xml
 <?xml version="1.0"?>
 <ruleset>
-    <rule ref="./vendor/youwe/coding-standard/src/Global"/>
+    <rule ref="./vendor/youwe/coding-standard/src/Youwe"/>
 </ruleset>
 ```
 
