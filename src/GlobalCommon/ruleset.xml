@@ -7,6 +7,10 @@
 -->
 <ruleset name="Global/Common">
     <description>Global its extension to PSR2.</description>
+    <!-- Show sniff codes in all reports. Easier to ignore rules when necessary -->
+    <arg value="s"/>
+    <!-- Use colors in output -->
+    <arg name="colors" />
 
     <!-- Base rules on PSR12 -->
     <rule ref="PSR12">
@@ -76,7 +80,6 @@
 
     <!-- Formatting -->
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
-    <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
 
     <!-- Functions -->
     <rule ref="Generic.Functions.CallTimePassByReference"/>
