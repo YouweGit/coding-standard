@@ -7,6 +7,10 @@
 -->
 <ruleset name="Global/Common">
     <description>Global its extension to PSR2.</description>
+    <!-- Show sniff codes in all reports. Easier to ignore rules when necessary -->
+    <arg value="s"/>
+    <!-- Use colors in output -->
+    <arg name="colors" />
 
     <!-- Base rules on PSR12 -->
     <rule ref="PSR12">
@@ -55,8 +59,11 @@
         <exclude name="Squiz.Commenting.FunctionComment.Missing"/>
         <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>
         <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag"/>
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
     </rule>
-    <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag">
+        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.WrongNumber" />
+    </rule>
     <rule ref="Squiz.Commenting.VariableComment">
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>
         <exclude name="Squiz.Commenting.VariableComment.Missing"/>
@@ -65,11 +72,17 @@
     <!-- Files -->
     <rule ref="Generic.Files.ByteOrderMark"/>
     <rule ref="Generic.Files.LineEndings"/>
-    <rule ref="Generic.Files.LineLength"/>
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>*.xml</exclude-pattern>
+        <properties>
+            <property name="lineLimit" value="200" />
+            <property name="absoluteLineLimit" value="800" />
+            <property name="ignoreComments" value="true" />
+        </properties>
+    </rule>
 
     <!-- Formatting -->
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
-    <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
 
     <!-- Functions -->
     <rule ref="Generic.Functions.CallTimePassByReference"/>
@@ -96,4 +109,11 @@
 
     <!-- Whitespace -->
     <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+            <property name="spacingAfterLast" value="0" />
+        </properties>
+    </rule>
 </ruleset>
