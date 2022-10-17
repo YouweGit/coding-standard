@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 3.5.1
+### Changed
+- ESLint conflict between `no-mixed-operators` and `no-extra-parens` resolved.
+
 ## 3.5.0
 ### Added
 - Args to show phpcs warnings/errors in color and show the correct class that
@@ -12,7 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Rule `Generic.Formatting.MultipleStatementAlignment`, since this did not help for the readability 
   of the code.
-
 
 ## 3.4.0
 ### Added
