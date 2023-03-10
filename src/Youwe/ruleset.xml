@@ -14,4 +14,19 @@
     <rule ref="Generic.Classes.DuplicateClassName" />
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod" />
     <rule ref="Squiz.PHP.Eval" />
+
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <properties>
+            <property name="allowFallbackGlobalConstants" value="true" />
+            <property name="allowFallbackGlobalFunctions" value="true" />
+            <property name="allowFullyQualifiedGlobalClasses" value="true" />
+            <property name="allowFullyQualifiedGlobalConstants" value="true" />
+            <property name="allowFullyQualifiedGlobalFunctions" value="true" />
+            <property name="allowPartialUses" value="true" />
+            <property name="searchAnnotations" value="true" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace" />
 </ruleset>
