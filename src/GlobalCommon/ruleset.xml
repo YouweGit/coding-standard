@@ -18,6 +18,7 @@
     </rule>
 
     <!-- Arrays -->
+    <rule ref="Generic.Arrays.ArrayIndent"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Squiz.Arrays.ArrayDeclaration">
         <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/>
