@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Changed minimal stability to allow installing `3.x-dev`.
 
+## 3.7.0
+### Added
+- Add rule `Generic.Arrays.ArrayIndent` to ensure array elements are indented.
+
 ## 3.6.1
 ### Changed
 - Allow use of stable version of `dealerdirect/phpcodesniffer-composer-installer`
